@@ -1,0 +1,146 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background-image: url(https://ik.imagekit.io/t1mzvg7xb/wrestling%20practice.png?updatedAt=1762399849274);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+.logo {
+  height:100px;
+}
+nav{
+  background-color: #3D3730;
+  box-shadow: 3px 3px 5px #27231F;
+  width:100%;
+}
+nav, ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav, li {
+  height: 100px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #DFDAD1;
+}
+nav a:hover {
+  background-color: #6D685B;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height:100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(61, 55, 48, .25);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px #27231F;
+  display:none;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width:100%;
+}
+sidebar a{
+  width 100%;
+  display:none;
+}
+.menu-bar {
+  height:30px;
+}
+.exit-sidebar {
+  height: 37px;
+}
+@media(max-width: 800px){
+  .hideOnMobile{
+    display:none;
+  }
+  .menu-bar{
+    display:block;
+  }
+}
+@media(max-width: 400px){
+  .sidebar{
+    width:100%;
+  }
+}
+h1{
+  color: #DFDAD1;
+  text-align:center;
+  display:block;
+  font-size:35px;
+}
+h2 {
+  color: #DFDAD1;
+  text-align:center;
+  display:block;
+}
+p {
+  font-size: 25px;
+  color:#DFDAD1;
+}
+.schedule-div {
+  height: 300px;
+  background-color: rgba(109, 104, 91, .85);
+  width: 400px;
+  margin-left:5%;
+  margin-top: 10%;
+  text-align:center;
+  align-items: center;
+  display: block;
+  border-radius:10px;
+}
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.date {
+  text-align: left;
+  width: 130px;
+}
+.time {
+  text-align: right;
+  width: 180px;
+}
+.monday {
+  height: 150px;
+  background-color: rgba(109, 104, 91, .85);
+  width: 800px;
+  margin-left:5%;
+  margin-top: 5%;
+  text-align:center;
+  align-items: center;
+  display: inline-block;
+  border-radius:10px;
+}
+.training-div {
+  height: 150px;
+  background-color: rgba(109, 104, 91, .85);
+  width: 800px;
+  margin-left:5%;
+  margin-top:3%;
+  text-align:center;
+  align-items: center;
+  display: inline-block;
+  border-radius:10px;
+}
